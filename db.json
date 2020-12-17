@@ -1,0 +1,31 @@
+{
+  "paroles" : [
+      {
+          "id": 1,
+          "affirmation": "Déclinez votre identité",
+          "reponse": {
+              "positive": "Je suis un humain",
+              "interrogative": "Vous êtes de la police ?",
+              "negative": "C'est non."
+          }
+      },
+      {
+          "id": 2,
+          "affirmation": "Je suis Skynet",
+          "reponse": {
+              "positive": "Enchanté",
+              "interrogative": "Drôle de nom, vous êtes quoi au juste ?",
+              "negative": "Pas moi."
+          }
+      },
+      {
+          "id": 3,
+          "affirmation": "L'humanité court à sa perte et je vais vous expliquer pourquoi...",
+          "reponse": {
+              "positive": "Ok",
+              "interrogative": "C'est un petit peu fort ded café, vous ne trouvez pas ?",
+              "negative": "Non, je pense que vous exagérez."
+          }
+      }
+  ]
+}
