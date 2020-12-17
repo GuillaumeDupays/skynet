@@ -48,7 +48,22 @@ button:hover {
     border: 1px solid #a6e6ff ;
 }
 input, textarea {
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   padding: 10px;
-  min-width: 250px;
+  margin: 10px;
+  width: 250px;
+}
+
+.contactForm {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+  /*border: 2px solid greenyellow;*/
+
+}
+.form-groupe {
+  /*border: 2px solid red;*/
+  width: 350px;
+  margin: auto;
 }

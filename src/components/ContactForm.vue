@@ -1,17 +1,17 @@
 <template>
     <div>
-        <form @submit.prevent="soumettreFormulaire">
+        <form @submit.prevent="soumettreFormulaire" class="contactForm">
             <div class="form-groupe">
-                <label for="prenom">Prénom : </label><br><br>
+                <label for="prenom">Prénom : </label><br>
                 <input 
                     type="text" 
                     id="prenom"
                     placeholder="Prenom"
                     v-model="prenom"
                 />
-            </div><br>
+            </div>
             <div class="form-groupe">
-                <label for="nom">Nom : </label><br><br>
+                <label for="nom">Nom : </label><br>
                 <input 
                     type="text" 
                     id="nom"
@@ -20,16 +20,16 @@
                 />
             </div><br>
             <div class="form-groupe">
-                <label for="email">Email : </label><br><br>
+                <label for="email">Email : </label><br>
                 <input 
                     type="text" 
                     id="email"
                     placeholder="Email"
                     v-model="email"
                 />
-            </div><br>
+            </div>
             <div class="form-groupe">
-                <label for="tel">Tel : </label><br><br>
+                <label for="tel">Tel : </label><br>
                 <input 
                     type="text" 
                     id="tel"
@@ -38,23 +38,16 @@
                 />
             </div><br>
             <div class="form-groupe">
-                <label for="adresse">Adresse : </label><br><br>
-                <input 
-                    type="text" 
-                    id="adresse"
-                    placeholder="Adresse"
-                    v-model="adresse"
-                />
-            </div><br>
-            <div class="form-groupe">
-                <label for="msg-contact">Message :</label><br><br>
+                <label for="msg-contact">Message :</label><br>
                 <textarea 
                     id="msg-contact"
                     placeholder="Message"
                     v-model="msgContact"
                 />
             </div><br>
-            <button type="submit">Envoyer</button>
+            <div class="form-groupe">
+                <button type="submit">Envoyer</button>
+            </div>
         </form>
     </div>
 </template>
@@ -67,7 +60,6 @@ export default {
             nom: "",
             email: "",
             tel: "",
-            adresse: "",
             msgContact: ""
         };
     },
@@ -79,7 +71,7 @@ export default {
                 nom: this.nom,
                 email: this.email,
                 tel: this.tel,
-                adresse: this.adresse,
+
                 msgContact: this.msgContact
             };
             this.$store.dispatch("envoyerMessage", message)
